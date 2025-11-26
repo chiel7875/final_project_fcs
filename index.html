@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Bookmark Manager</title> 
+</head> 
+
+<body>  
+  <header>
+    <h1>My Bookmark Manager</h1>
+    <nav> 
+        <ul class="nav-list"> 
+            <li><a href="#inspiration">Inspiration</a></li> 
+            <li><a href="#why-use-Bookmark-Manager">why Bookmark Manager?</a></li>
+            <li><a href="#favorites">Favorites</a></li> 
+            <li><a href="#bookmark-list">View Bookmarks</a></li> 
+        </ul> 
+    </nav> 
+    <button class="dark-mode" id="dark-mode">Dark Mode</button>
+  </header>
+    <main class="bookmark" id="bookmark-container">
+        <section id="bookmark-form">
+        <h2>Add a New Bookmark</h2>
+        <form id="addBookmark">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="description">
+            <input type="url" id="bkmurl" placeholder="Enter URL" required>
+            <button class="add-btn">Add to Bookmarks</button>
+            <p id="bkm-output"></p>
+        </form>
+        </section>
+    
+        <section id="bookmark-list">
+          <h2>My Bookmarks</h2>
+          <ul id="bookmarks"></ul>
+          <button id="delete-btn">Delete all bookmarks</button>
+        </section>
+
+
+        <form id="favorites"> 
+        <h2>My Favorite Bookmarks</h2>
+        <ul id="favoriteBookmarks"></ul>
+        </form>
+
+        <form id="remove-favorite">
+         <button class="remove_btn">clear all favorites</button>
+        </form>
+
+        <section id="why-use-Bookmark-Manager">
+          <h2>Why Use Bookmark Manager?</h2>
+          <p>What's different about us? You get to suffer while organized, and then rip as a well developed software engineer roasted by SE Factory ;) </p>
+        </section>
+
+        <section id="inspiration">
+          <h2>Inspiration</h2>
+          <p>Dear Vladimir, I so look forward to a really good grade... <br> just so that the mental breakdowns i had through the last 3 days wouldn't go in vein.. xD <br> I will rest assured and sleep peacefully trusting your judgement :p <br>&#10022;Special Thanks for your efforts during our FCS journey &#10022;</p>         
+        </section>
+        
+      </main>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
